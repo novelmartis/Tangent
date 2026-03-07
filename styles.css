@@ -553,6 +553,18 @@ textarea { min-height: 130px; resize: vertical; }
   color: var(--white);
 }
 
+.footer-license {
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-license:hover {
+  color: var(--white);
+  text-decoration: none;
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+}
+
 .footer-link {
   color: var(--muted);
   font-size: 14px;
