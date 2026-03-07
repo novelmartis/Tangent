@@ -186,6 +186,20 @@ section {
   border-top: 1px solid var(--faint);
 }
 
+.interlude-section {
+  padding: 28px 0 20px;
+}
+
+.interlude-quote {
+  margin: 0;
+  max-width: 760px;
+  padding-left: 16px;
+  border-left: 2px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(19px, 3vw, 26px);
+  line-height: 1.5;
+}
+
 .section-label { margin-bottom: 16px; }
 
 .section-title {
