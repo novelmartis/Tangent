@@ -42,7 +42,8 @@ Stop with `Ctrl+C`.
 
 ## License
 
-This project is licensed under the MIT License. See `LICENSE`.
+- Source code is licensed under **PolyForm Noncommercial 1.0.0**. See `LICENSE`.
+- Only source-code files are licensed under **PolyForm Noncommercial 1.0.0**. The Tangent name, logo, visual identity, and all non-code website content are **all rights reserved**. Commercial use requires prior written permission.
 
 ## Forms (Formspree)
 
