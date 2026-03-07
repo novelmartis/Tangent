@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tangent — Advanced Track</title>
+  <meta name="description" content="Advanced paper-based track with current topic details and direct application form." />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-header-inner">
+    <a class="brand" href="../index.html" aria-label="Tangent home">
+      <svg viewBox="0 0 64 64" width="28" height="28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="22" cy="42" r="17" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="5.5"></circle>
+        <line x1="17.6" y1="7.1" x2="55.6" y2="59.1" stroke="#C85A2A" stroke-width="5.5" stroke-linecap="round"></line>
+        <circle cx="36" cy="32" r="5.5" fill="#C85A2A"></circle>
+      </svg>
+      <span class="brand-word">Tangent</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a class="active" href="../tracks.html">Tracks</a>
+      <a href="../how-it-works.html">How it Works</a>
+      <a href="../mentors.html">Mentors</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-eyebrow">Advanced Track</div>
+      <h1>For students ready to read papers seriously.</h1>
+      <p>One paper each week, small-group discussion, and student-led presentations as the weeks progress.</p>
+      <div class="meta-row" style="margin-top:20px;">
+        <span class="meta-chip">Advanced high-school</span>
+        <span class="meta-chip">Bachelor's and Master's</span>
+        <span class="meta-chip">4-6 students</span>
+        <span class="meta-chip">4 weeks</span>
+      </div>
+      <div class="hero-actions" style="margin-top:18px;">
+        <a class="button-secondary" href="../tracks.html">Back to Tracks</a>
+        <a class="button-secondary" href="foundational.html">See Foundational Track</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label">Who it is for</div>
+      <ul class="list">
+        <li>Advanced high-school students.</li>
+        <li>Bachelor's students.</li>
+        <li>Master's students.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label">Current topic</div>
+      <article class="card">
+        <h3>NeuroAI — Minds, Machines &amp; Visual Cortex</h3>
+        <p>Four papers at the intersection of neuroscience and machine learning: what deep networks reveal about the brain, what the brain reveals about learning algorithms, and why understanding a complex system is harder than it first appears.</p>
+      </article>
+      <p class="notice">Future topics open based on interest overlap and mentor availability.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label">What we read</div>
+      <ul class="list">
+        <li>One paper per week.</li>
+        <li>Sometimes a technical essay or review alongside it.</li>
+        <li>Optional extra reading for students who want more depth.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label">What students practise</div>
+      <ul class="list">
+        <li>What is the question?</li>
+        <li>What is the main claim?</li>
+        <li>How does the argument or evidence work?</li>
+        <li>What remains unclear?</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label">4-week format</div>
+      <ul class="list">
+        <li>Week 1: mentor models how to read and present a paper.</li>
+        <li>Weeks 2-4: students present and lead part of discussion.</li>
+        <li>In larger groups, one paper may be split across 1-2 students.</li>
+        <li>A simple 1-slide format is enough.</li>
+      </ul>
+      <p class="section-intro" style="margin-top:14px;">Good questions matter. The point is not polished performance.</p>
+    </div>
+  </section>
+
+  <section id="apply">
+    <div class="container">
+      <div class="section-label">Advanced application</div>
+      <h2 class="section-title">Apply here</h2>
+      <p class="section-intro">A few focused questions. Specific answers help with placement.</p>
+
+      <form class="form-wrap" action="https://formspree.io/f/mzdanqwq" method="POST">
+        <input type="hidden" name="group" value="open" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="background">Current stage</label>
+          <select id="background" name="background" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Advanced high-school student">Advanced high-school student</option>
+            <option value="Undergraduate student">Undergraduate student</option>
+            <option value="Graduate student">Graduate student (Master's)</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Topic preference</label>
+          <select id="topic" name="topic_preference" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="NeuroAI">NeuroAI (current offering)</option>
+            <option value="Not sure yet">Not sure yet</option>
+            <option value="Something else">Something else</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="q_draw">What draws you to this topic?</label>
+          <span class="label-hint">Be specific about the exact question or tension you want to think through.</span>
+          <textarea id="q_draw" name="q_draw" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="q_prior">Have you read primary literature before? In what areas?</label>
+          <textarea id="q_prior" name="q_prior" style="min-height:90px;"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="q_value">What would make these four weeks useful for you?</label>
+          <textarea id="q_value" name="q_value" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="availability">Availability / timezone</label>
+            <input type="text" id="availability" name="availability" placeholder="e.g. Tue/Thu evenings, IST" required />
+          </div>
+          <div class="form-group">
+            <label for="q_other">Anything else?</label>
+            <input type="text" id="q_other" name="q_other" />
+          </div>
+        </div>
+
+        <button class="button" type="submit" style="width:100%;">Send Advanced Application</button>
+      </form>
+
+      <div class="proof" style="margin-top:20px;">
+        <p>I read every application. If there is a fit, I reach out for a short call. Tangent is paid; fees are discussed on the call. Waivers or reductions can be discussed.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="container page-footer-inner">
+    <span class="footer-name">Tangent</span>
+    <a class="footer-link" href="../tracks.html">Back to Tracks</a>
+  </div>
+</footer>
+</body>
+</html>

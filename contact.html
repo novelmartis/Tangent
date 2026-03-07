@@ -4,276 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tangent — Contact</title>
-  <meta name="description" content="Get in touch with Tangent — general queries, questions about tracks, or interest in running a track." />
-  <link rel="icon" type="image/svg+xml" href="tangent-icon.svg" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --navy:   #1B2A4A;
-      --dark:   #131e35;
-      --raised: #243655;
-      --accent: #C85A2A;
-      --mid:    rgba(255,255,255,0.5);
-      --body:   rgba(255,255,255,0.88);
-      --white:  #FFFFFF;
-      --rule:   rgba(255,255,255,0.12);
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--body);
-      background: var(--navy);
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-
-    section { padding: 72px 0; }
-    section + section { border-top: 1px solid var(--rule); }
-
-    /* Nav */
-    nav {
-      position: sticky;
-      top: 0;
-      background: var(--dark);
-      border-bottom: 1px solid var(--rule);
-      z-index: 100;
-      padding: 14px 0;
-    }
-    nav .container { display: flex; align-items: center; gap: 12px; }
-    nav a.nav-home {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-    }
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      margin-left: auto;
-    }
-    .nav-links a {
-      font-family: Arial, sans-serif;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--mid);
-      text-decoration: none;
-      transition: color 0.15s;
-    }
-    .nav-links a:hover { color: var(--white); text-decoration: none; }
-
-    /* Hero */
-    #hero {
-      padding: 80px 0 64px;
-      border-top: 4px solid var(--accent);
-    }
-    .hero-eyebrow {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 16px;
-    }
-    #hero h1 {
-      font-family: Arial, sans-serif;
-      font-size: clamp(40px, 8vw, 72px);
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      color: var(--white);
-      line-height: 1;
-      margin-bottom: 20px;
-    }
-    #hero p {
-      font-size: 19px;
-      color: var(--mid);
-      font-style: italic;
-      max-width: 540px;
-    }
-
-    /* Section label */
-    .section-label {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 24px;
-    }
-
-    /* Form */
-    #contact p {
-      font-size: 17px;
-      line-height: 1.75;
-      max-width: 560px;
-      color: var(--mid);
-      margin-bottom: 32px;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      margin-bottom: 20px;
-    }
-    .form-group label {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--white);
-      letter-spacing: 0.04em;
-    }
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-bottom: 20px;
-    }
-    .form-row .form-group { margin-bottom: 0; }
-
-    input, textarea, select {
-      background: var(--raised);
-      border: 1px solid var(--rule);
-      border-radius: 3px;
-      color: var(--white);
-      font-family: Georgia, serif;
-      font-size: 16px;
-      padding: 10px 12px;
-      width: 100%;
-      transition: border-color 0.15s;
-    }
-    input:focus, textarea:focus, select:focus {
-      outline: none;
-      border-color: var(--accent);
-    }
-    textarea { min-height: 140px; resize: vertical; }
-
-    button[type="submit"] {
-      margin-top: 8px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      background: var(--accent);
-      color: var(--white);
-      border: none;
-      border-radius: 3px;
-      padding: 10px 28px;
-      cursor: pointer;
-      transition: opacity 0.15s;
-    }
-    button[type="submit"]:hover { opacity: 0.88; }
-
-    /* Footer */
-    footer { padding: 32px 0; border-top: 1px solid var(--rule); }
-    footer .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .footer-name {
-      font-family: Arial, sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      color: var(--white);
-      text-transform: uppercase;
-    }
-    .footer-link { font-size: 13px; color: var(--mid); }
-
-    @media (max-width: 640px) {
-      .nav-links { display: none; }
-      .form-row { grid-template-columns: 1fr; }
-    }
-  </style>
+  <meta name="description" content="General contact for Tangent and links to track applications." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<nav>
-  <div class="container">
-    <a class="nav-home" href="index.html">
-      <svg viewBox="0 0 64 64" width="28" height="28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink:0;">
-        <circle cx="22" cy="42" r="17" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="5.5"/>
-        <line x1="17.6" y1="7.1" x2="55.6" y2="59.1" stroke="#C85A2A" stroke-width="5.5" stroke-linecap="round"/>
-        <circle cx="36" cy="32" r="5.5" fill="#C85A2A"/>
+<header class="site-header">
+  <div class="container site-header-inner">
+    <a class="brand" href="index.html" aria-label="Tangent home">
+      <svg viewBox="0 0 64 64" width="28" height="28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="22" cy="42" r="17" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="5.5"></circle>
+        <line x1="17.6" y1="7.1" x2="55.6" y2="59.1" stroke="#C85A2A" stroke-width="5.5" stroke-linecap="round"></line>
+        <circle cx="36" cy="32" r="5.5" fill="#C85A2A"></circle>
       </svg>
-      <span style="font-family:Arial,sans-serif;font-size:18px;font-weight:700;letter-spacing:0.08em;color:#FFFFFF;text-transform:uppercase;">Tangent</span>
+      <span class="brand-word">Tangent</span>
     </a>
-    <nav class="nav-links">
-      <a href="grades-7-9.html">Foundational</a>
-      <a href="open.html">Advanced</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="tracks.html">Tracks</a>
+      <a href="how-it-works.html">How it Works</a>
       <a href="mentors.html">Mentors</a>
-      <a href="contact.html">Contact</a>
+      <a class="active" href="contact.html">Contact</a>
     </nav>
   </div>
-</nav>
+</header>
 
-<section id="hero">
-  <div class="container">
-    <div class="hero-eyebrow">Get in touch</div>
-    <h1>CONTACT</h1>
-    <p>Questions about a track, about running one, or anything else.</p>
-  </div>
-</section>
+<main class="page">
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-eyebrow">Contact</div>
+      <h1>Questions before applying?</h1>
+      <p>Track applications are on the track pages. Use this page for general questions and parent queries.</p>
+      <div class="hero-actions">
+        <a class="button" href="tracks/foundational.html#apply">Apply to Foundational</a>
+        <a class="button" href="tracks/advanced.html#apply">Apply to Advanced</a>
+      </div>
+    </div>
+  </section>
 
-<section id="contact">
-  <div class="container">
-    <div class="section-label">Send a message</div>
-    <p>Use this for general queries. If you're ready to express interest in a specific track, go to the <a href="grades-7-9.html">Foundational</a> or <a href="open.html">Advanced</a> page directly.</p>
+  <section>
+    <div class="container">
+      <div class="section-label">General contact</div>
+      <h2 class="section-title">Send a message</h2>
+      <p class="section-intro">Tangent is paid, not free. Fees are discussed on a short call after applications are reviewed.</p>
 
-    <form action="https://formspree.io/f/mzdanqwq" method="POST">
-      <input type="hidden" name="group" value="contact" />
+      <form class="form-wrap" action="https://formspree.io/f/mzdanqwq" method="POST">
+        <input type="hidden" name="group" value="contact" />
 
-      <div class="form-row">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c_name">Name</label>
+            <input id="c_name" name="name" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="c_email">Email</label>
+            <input id="c_email" name="email" type="email" required />
+          </div>
         </div>
+
         <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <label for="c_subject">What is this about?</label>
+          <select id="c_subject" name="subject" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Question about Foundational">Question about Foundational</option>
+            <option value="Question about Advanced">Question about Advanced</option>
+            <option value="Parent question">Parent question</option>
+            <option value="General question">General question</option>
+          </select>
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="subject">What is this about?</label>
-        <select id="subject" name="subject" required>
-          <option value="" disabled selected>— choose one —</option>
-          <option value="Question about Foundational Tracks">Question about Foundational Tracks</option>
-          <option value="Question about Advanced Tracks">Question about Advanced Tracks</option>
-          <option value="Running a track">I'm interested in running a track</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
+        <div class="form-group">
+          <label for="c_message">Message</label>
+          <textarea id="c_message" name="message" required></textarea>
+        </div>
 
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
+        <button class="button" type="submit" style="width:100%;">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
 
-      <button type="submit">Send →</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
+<footer class="page-footer">
+  <div class="container page-footer-inner">
     <span class="footer-name">Tangent</span>
-    <a class="footer-link" href="https://sushrutthorat.com">sushrutthorat.com</a>
+    <a class="footer-link" href="tracks.html">Tracks</a>
   </div>
 </footer>
-
 </body>
 </html>

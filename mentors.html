@@ -4,314 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tangent — Mentors</title>
-  <meta name="description" content="Tangent tracks are led by researchers and domain experts. Meet the mentors, and find out how to run a track of your own." />
-  <link rel="icon" type="image/svg+xml" href="tangent-icon.svg" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --navy:   #1B2A4A;
-      --dark:   #131e35;
-      --raised: #243655;
-      --accent: #C85A2A;
-      --mid:    rgba(255,255,255,0.5);
-      --body:   rgba(255,255,255,0.88);
-      --white:  #FFFFFF;
-      --rule:   rgba(255,255,255,0.12);
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 17px;
-      line-height: 1.7;
-      color: var(--body);
-      background: var(--navy);
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-
-    section { padding: 72px 0; }
-    section + section { border-top: 1px solid var(--rule); }
-
-    /* Nav */
-    nav {
-      position: sticky;
-      top: 0;
-      background: var(--dark);
-      border-bottom: 1px solid var(--rule);
-      z-index: 100;
-      padding: 14px 0;
-    }
-    nav .container { display: flex; align-items: center; gap: 12px; }
-    nav a.nav-home {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-    }
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      margin-left: auto;
-    }
-    .nav-links a {
-      font-family: Arial, sans-serif;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--mid);
-      text-decoration: none;
-      transition: color 0.15s;
-    }
-    .nav-links a:hover { color: var(--white); text-decoration: none; }
-
-    /* Hero */
-    #hero {
-      padding: 80px 0 64px;
-      border-top: 4px solid var(--accent);
-    }
-    .hero-eyebrow {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 16px;
-    }
-    #hero h1 {
-      font-family: Arial, sans-serif;
-      font-size: clamp(40px, 8vw, 72px);
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      color: var(--white);
-      line-height: 1;
-      margin-bottom: 20px;
-    }
-    #hero p {
-      font-size: 19px;
-      color: var(--mid);
-      font-style: italic;
-      max-width: 540px;
-    }
-
-    /* Section label */
-    .section-label {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 24px;
-    }
-
-    /* Mentor photo */
-    .mentor-header {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      margin-bottom: 16px;
-    }
-    .mentor-photo {
-      width: 88px;
-      height: 88px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center top;
-      flex-shrink: 0;
-      border: 2px solid var(--rule);
-    }
-
-    /* Mentor cards */
-    #mentors .section-intro {
-      font-size: 17px;
-      line-height: 1.75;
-      max-width: 640px;
-      color: var(--mid);
-      font-style: italic;
-      margin-bottom: 36px;
-    }
-    .mentor-card {
-      border-left: 3px solid var(--rule);
-      padding: 4px 0 4px 20px;
-      margin-bottom: 32px;
-    }
-    .mentor-name {
-      font-family: Arial, sans-serif;
-      font-size: 17px;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 4px;
-    }
-    .mentor-role {
-      font-family: Arial, sans-serif;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 10px;
-    }
-    .mentor-card p { font-size: 15px; line-height: 1.7; max-width: 600px; }
-    .mentor-card p + p { margin-top: 10px; }
-
-    .credentials {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 14px;
-    }
-    .cred {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--white);
-      background: var(--raised);
-      border: 1px solid var(--rule);
-      padding: 4px 10px;
-      border-radius: 2px;
-    }
-
-    /* Run a track */
-    #run-a-track { background: var(--dark); }
-    #run-a-track p { font-size: 17px; line-height: 1.75; max-width: 600px; }
-    #run-a-track p + p { margin-top: 14px; }
-    .contact-link {
-      display: inline-block;
-      margin-top: 24px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--accent);
-      border: 1.5px solid var(--accent);
-      padding: 8px 20px;
-      border-radius: 3px;
-      transition: background 0.15s, color 0.15s;
-    }
-    .contact-link:hover { background: var(--accent); color: var(--white); text-decoration: none; }
-
-    /* Footer */
-    footer { padding: 32px 0; border-top: 1px solid var(--rule); }
-    footer .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .footer-name {
-      font-family: Arial, sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      color: var(--white);
-      text-transform: uppercase;
-    }
-    .footer-link { font-size: 13px; color: var(--mid); }
-
-    @media (max-width: 640px) {
-      .nav-links { display: none; }
-    }
-  </style>
+  <meta name="description" content="Mentor background, current offerings, and mentorship interest form." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<nav>
-  <div class="container">
-    <a class="nav-home" href="index.html">
-      <svg viewBox="0 0 64 64" width="28" height="28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink:0;">
-        <circle cx="22" cy="42" r="17" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="5.5"/>
-        <line x1="17.6" y1="7.1" x2="55.6" y2="59.1" stroke="#C85A2A" stroke-width="5.5" stroke-linecap="round"/>
-        <circle cx="36" cy="32" r="5.5" fill="#C85A2A"/>
+<header class="site-header">
+  <div class="container site-header-inner">
+    <a class="brand" href="index.html" aria-label="Tangent home">
+      <svg viewBox="0 0 64 64" width="28" height="28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="22" cy="42" r="17" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="5.5"></circle>
+        <line x1="17.6" y1="7.1" x2="55.6" y2="59.1" stroke="#C85A2A" stroke-width="5.5" stroke-linecap="round"></line>
+        <circle cx="36" cy="32" r="5.5" fill="#C85A2A"></circle>
       </svg>
-      <span style="font-family:Arial,sans-serif;font-size:18px;font-weight:700;letter-spacing:0.08em;color:#FFFFFF;text-transform:uppercase;">Tangent</span>
+      <span class="brand-word">Tangent</span>
     </a>
-    <nav class="nav-links">
-      <a href="grades-7-9.html">Foundational</a>
-      <a href="open.html">Advanced</a>
-      <a href="mentors.html">Mentors</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="tracks.html">Tracks</a>
+      <a href="how-it-works.html">How it Works</a>
+      <a class="active" href="mentors.html">Mentors</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
-</nav>
+</header>
 
-<section id="hero">
-  <div class="container">
-    <div class="hero-eyebrow">People</div>
-    <h1>MENTORS</h1>
-    <p>Researchers and domain experts who design and lead Tangent tracks.</p>
-  </div>
-</section>
-
-<section id="mentors">
-  <div class="container">
-    <div class="section-label">Current mentors</div>
-    <p class="section-intro">Each mentor designs their own reading list and leads their own sessions. Tangent handles the structure and the students.</p>
-
-    <div class="mentor-card">
-      <div class="mentor-header">
-        <img src="portrait_main2.JPG" alt="Dr. Sushrut Thorat" class="mentor-photo" />
-        <div>
-          <div class="mentor-name">Dr. Sushrut Thorat</div>
-          <div class="mentor-role">Founding mentor · ML &amp; Cognitive Neuroscience</div>
-        </div>
-      </div>
-      <p>
-        Researcher in machine learning and cognitive neuroscience. His work studies how the
-        brain represents the visual world, and how artificial neural networks can be made to
-        better reflect biological vision.
-      </p>
-      <p>
-        Has supervised 20+ students across undergraduate, masters, and PhD levels, and run
-        reading groups for years — at university and informally with students in India.
-        Several of those informal mentees went on to competitive undergraduate and master's programmes.
-      </p>
-      <p>Currently based in India; moving to Sydney (MARCS Institute, Western Sydney University) in 2026. Sessions are online.</p>
-      <div class="credentials">
-        <span class="cred">B.Tech. IIT Bombay</span>
-        <span class="cred">Ph.D. Radboud University</span>
-        <span class="cred">Postdoc — Osnabrück University</span>
-        <span class="cred">Incoming — MARCS Institute, Sydney</span>
-        <span class="cred"><a href="https://sushrutthorat.com" style="color:inherit;">sushrutthorat.com</a></span>
-        <span class="cred"><a href="https://sushrutthorat.com/cv" style="color:inherit;">CV</a></span>
-      </div>
+<main class="page">
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-eyebrow">Mentors</div>
+      <h1>Background and current offerings.</h1>
+      <p>Who is teaching, what they work on, and what they are currently running.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="run-a-track">
-  <div class="container">
-    <div class="section-label">Run a track</div>
-    <p>
-      Tangent is looking for researchers and domain experts who want to run reading groups
-      of their own. If you have a subject you think deeply about and a small set of texts
-      worth reading carefully — that's enough to start.
-    </p>
-    <p>
-      We handle the structure, the students, and the logistics. You design the reading list
-      and lead the sessions.
-    </p>
-    <p>
-      Payout and terms are discussed on a call — they depend on the track, the group size,
-      and what you're comfortable with.
-    </p>
-    <a class="contact-link" href="contact.html">Get in touch →</a>
-  </div>
-</section>
+  <section>
+    <div class="container">
+      <div class="section-label">Current mentor</div>
+      <article class="card">
+        <div class="profile">
+          <img src="portrait_main2.JPG" alt="Dr. Sushrut Thorat" class="profile-photo" />
+          <div>
+            <h3>Dr. Sushrut Thorat</h3>
+            <p class="profile-role">ML &amp; Cognitive Neuroscience · MARCS Institute (Western Sydney University, incoming 2026)</p>
+            <p class="section-intro">Researcher in machine learning and cognitive neuroscience. Has supervised students across undergraduate, master's, and PhD levels, and has led reading groups in university and informal settings.</p>
+          </div>
+        </div>
 
-<footer>
-  <div class="container">
+        <div class="profile-grid">
+          <div class="profile-item">
+            <strong>Background</strong>
+            <span>B.Tech IIT Bombay · PhD Radboud University · Postdoc Osnabrück University.</span>
+          </div>
+          <div class="profile-item">
+            <strong>Current offerings</strong>
+            <span>Foundational: Physics, Mathematics, AI/Cognitive Neuroscience. Advanced: NeuroAI paper discussions.</span>
+          </div>
+        </div>
+
+        <div class="inline-links">
+          <a href="https://sushrutthorat.com">Website</a>
+          <a href="https://sushrutthorat.com/cv">CV</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="mentor-interest">
+    <div class="container">
+      <div class="section-label">Mentorship interest</div>
+      <h2 class="section-title">Want to run a track?</h2>
+      <p class="section-intro">Researchers and domain experts can express interest here.</p>
+
+      <form class="form-wrap" action="https://formspree.io/f/mzdanqwq" method="POST">
+        <input type="hidden" name="group" value="mentor-interest" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="m_name">Name</label>
+            <input type="text" id="m_name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="m_email">Email</label>
+            <input type="email" id="m_email" name="email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="m_role">Role / affiliation</label>
+          <input type="text" id="m_role" name="role_affiliation" required />
+        </div>
+
+        <div class="form-group">
+          <label for="m_areas">Areas you can mentor</label>
+          <textarea id="m_areas" name="areas" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="m_samples">Sample readings/themes</label>
+            <input type="text" id="m_samples" name="sample_readings" required />
+          </div>
+          <div class="form-group">
+            <label for="m_timing">Preferred timing</label>
+            <input type="text" id="m_timing" name="timing" required />
+          </div>
+        </div>
+
+        <button class="button" type="submit" style="width:100%;">Express Interest in Mentorship</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="container page-footer-inner">
     <span class="footer-name">Tangent</span>
     <a class="footer-link" href="https://sushrutthorat.com">sushrutthorat.com</a>
   </div>
 </footer>
-
 </body>
 </html>
