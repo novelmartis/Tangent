@@ -82,7 +82,8 @@ Keep wording aligned with current site direction:
   - `favicon-16x16.png`
   - `favicon.ico`
   - `apple-touch-icon.png`
-- Legacy icon file retained: `tangent-icon.svg` (not wired in page heads).
+- Navbar brand mark uses `logo_light.png`.
+- Mentor photos live in `mentor_portraits/`.
 - Track pages use `../` relative paths for shared assets.
 
 ## Before Committing

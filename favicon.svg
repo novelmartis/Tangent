@@ -1,61 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="200mm"
-   height="200mm"
-   viewBox="0 0 200 200"
-   version="1.1"
-   id="svg1"
-   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
-   sodipodi:docname="favicon.svg"
-   inkscape:export-filename="favicon-48x48.png"
-   inkscape:export-xdpi="6.0959997"
-   inkscape:export-ydpi="6.0959997"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="true"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="0.55222577"
-     inkscape:cx="296.97998"
-     inkscape:cy="382.0901"
-     inkscape:window-width="1263"
-     inkscape:window-height="645"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
-  <defs
-     id="defs1" />
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <g
-       id="g1"
-       transform="matrix(1.6554165,0,0,1.6554165,-91.126842,-54.651218)">
-      <path
-         id="path1"
-         style="fill:#000000;fill-opacity:1;stroke-width:0.264583"
-         d="m 99.861088,43.908948 a 51,51 0 0 0 -33.19539,12.282454 51,51 0 0 1 17.619597,-3.140377 51,51 0 0 1 50.999985,50.999985 51,51 0 0 1 -17.8046,38.71805 51,51 0 0 0 33.3804,-47.860124 51,51 0 0 0 -50.999992,-50.999988 z"
-         inkscape:export-filename="logo_dark.png"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96" />
-      <path
-         id="rect4"
-         style="fill:#000000;fill-opacity:1;stroke-width:0.168591"
-         d="m 171.1588,17.405969 -1.9e-4,84.384621 4.69157,-1.2571 3e-5,-83.127344 z"
-         transform="rotate(15)" />
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-label="Tangent mark">
+  <g transform="matrix(1.6554165,0,0,1.6554165,-91.126842,-54.651218)">
+    <path
+      fill="#000"
+      d="m 99.861088,43.908948 a 51,51 0 0 0 -33.19539,12.282454 51,51 0 0 1 17.619597,-3.140377 51,51 0 0 1 50.999985,50.999985 51,51 0 0 1 -17.8046,38.71805 51,51 0 0 0 33.3804,-47.860124 51,51 0 0 0 -50.999992,-50.999988 z" />
+    <path
+      fill="#000"
+      d="m 171.1588,17.405969 -1.9e-4,84.384621 4.69157,-1.2571 3e-5,-83.127344 z"
+      transform="rotate(15)" />
   </g>
 </svg>
