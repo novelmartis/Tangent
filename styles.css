@@ -67,6 +67,13 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
 }
 
+.brand-logo {
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
 .brand-word {
   font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
   font-size: 17px;
