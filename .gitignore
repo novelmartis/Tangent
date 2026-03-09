@@ -7,3 +7,8 @@ local-ops/
 # Generated marketing assets (built from scripts, not source)
 tangent-flyer.pdf
 tangent-flyer.html
+
+# Flyer proof and debug artifacts
+tangent-flyer-debug-check.html
+tangent-flyer-pdf-check-*.png
+tangent-qr.png

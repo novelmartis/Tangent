@@ -8,7 +8,10 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
-   sodipodi:docname="logo_only.svg"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="apple-touch-icon.png"
+   inkscape:export-xdpi="22.860001"
+   inkscape:export-ydpi="22.860001"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +26,9 @@
      inkscape:pagecheckerboard="true"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.37169751"
-     inkscape:cx="458.70633"
-     inkscape:cy="278.45223"
+     inkscape:zoom="0.29366644"
+     inkscape:cx="260.49963"
+     inkscape:cy="294.55187"
      inkscape:window-width="1352"
      inkscape:window-height="738"
      inkscape:window-x="0"
@@ -39,13 +42,26 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
+       inkscape:groupmode="layer"
+       id="layer4"
+       inkscape:label="Layer 4"
+       transform="matrix(1.1137397,0,0,1.1137397,-6.6966785,-3.4977591)">
+      <rect
+         style="font-variation-settings:'wght' 600;opacity:1;fill:#101a30;fill-opacity:1;stroke-width:2.21775"
+         id="rect2"
+         width="184.3674"
+         height="184.85258"
+         x="3.101722"
+         y="0.22948931" />
+    </g>
+    <g
        id="g3"
-       transform="matrix(1.1137397,0,0,1.1137397,-6.6966786,-3.4977591)">
+       transform="matrix(1.1137397,0,0,1.1137397,-6.6966785,-3.4977591)">
       <g
          id="g2">
         <path
            id="path1"
-           style="fill:#000000;fill-opacity:1;stroke-width:0.196108"
+           style="fill:#cfd5e4;fill-opacity:1;stroke-width:0.196108"
            d="m 77.223099,95.157475 a 37.800948,37.800948 0 0 0 -24.60426,9.103675 37.800948,37.800948 0 0 1 13.059556,-2.32763 37.800948,37.800948 0 0 1 37.800935,37.80095 A 37.800948,37.800948 0 0 1 90.282657,168.4321 37.800948,37.800948 0 0 0 115.02402,132.95841 37.800948,37.800948 0 0 0 77.223099,95.157475 Z"
            inkscape:export-filename="logo_dark.png"
            inkscape:export-xdpi="96"
@@ -53,8 +69,8 @@
       </g>
       <path
          id="rect1"
-         style="font-variation-settings:'wght' 600;fill:#000000;fill-opacity:1;stroke-width:3.20114"
-         d="M 96.389465,18.23558 84.763301,21.350635 124.17484,168.43623 h 12.46074 z" />
+         style="font-variation-settings:'wght' 600;fill:#c85a2a;fill-opacity:1;stroke-width:3.20114"
+         d="M 97.814843,18.23558 86.188679,21.350635 125.60023,168.43623 h 12.46074 z" />
     </g>
   </g>
 </svg>

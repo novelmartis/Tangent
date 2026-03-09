@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+
 * , *::before, *::after { box-sizing: border-box; }
 
 :root {
@@ -67,6 +69,12 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
 }
 
+.brand:hover,
+.brand:focus-visible {
+  text-underline-offset: 0.16em;
+  text-decoration-thickness: 1.5px;
+}
+
 .brand-logo {
   display: block;
   width: 28px;
@@ -75,12 +83,14 @@ img { max-width: 100%; display: block; }
 }
 
 .brand-word {
-  font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
-  font-size: 17px;
+  display: inline-block;
+  font-family: "Libre Baskerville", "Times New Roman", serif;
+  font-size: 18px;
   font-weight: 700;
-  letter-spacing: 0.09em;
-  color: var(--white);
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--white);
+  transform: translateY(1px);
 }
 
 .main-nav {
@@ -552,12 +562,17 @@ textarea { min-height: 130px; resize: vertical; }
 }
 
 .footer-name {
-  font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: "Libre Baskerville", "Times New Roman", serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--white);
+}
+
+.brand-eyebrow {
+  font-family: "Libre Baskerville", "Times New Roman", serif;
+  letter-spacing: 0.08em;
 }
 
 .footer-link {
