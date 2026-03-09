@@ -3,3 +3,7 @@
 
 # Local operational docs (do not sync)
 local-ops/
+
+# Generated marketing assets (built from scripts, not source)
+tangent-flyer.pdf
+tangent-flyer.html
