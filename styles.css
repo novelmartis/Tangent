@@ -154,6 +154,18 @@ img { max-width: 100%; display: block; }
   font-style: italic;
 }
 
+.inline-highlight {
+  display: inline-block;
+  padding: 0.08em 0.42em;
+  border-radius: 0.28em;
+  background: rgba(200, 90, 42, 0.2);
+  border: 1px solid rgba(200, 90, 42, 0.4);
+  color: var(--white);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
 .hero-actions {
   margin-top: 34px;
   display: flex;
