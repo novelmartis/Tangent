@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
   <link rel="shortcut icon" href="../favicon.ico" />
   <link rel="stylesheet" href="../styles.css" />
+  <script src="../form-validation.js" defer></script>
 </head>
 <body>
 <header class="site-header">
@@ -66,17 +67,17 @@
       <div class="grid-3">
         <article class="card">
           <h3>Physics</h3>
-          <p><em>The Feynman Lectures on Physics, Vol. 1</em></p>
+          <p><em><a href="https://www.amazon.com/s?k=The+Feynman+Lectures+on+Physics+Vol.+1" target="_blank" rel="noreferrer">The Feynman Lectures on Physics, Vol. 1</a></em></p>
           <p style="margin-top:10px;">Start from simple assumptions and build toward deeper ideas in motion, gravity, and uncertainty.</p>
         </article>
         <article class="card">
           <h3>Mathematics</h3>
-          <p><em>Proofs from the Book</em> — Aigner &amp; Ziegler</p>
+          <p><em><a href="https://www.amazon.com/s?k=Proofs+from+THE+BOOK+Martin+Aigner+G%C3%BCnter+M.+Ziegler" target="_blank" rel="noreferrer">Proofs from the Book</a></em> — Aigner &amp; Ziegler</p>
           <p style="margin-top:10px;">Elegant proofs that build mathematical taste and the move from intuition to clear argument.</p>
         </article>
         <article class="card">
           <h3>Minds, Brains, and Machines</h3>
-          <p><em>Vehicles</em> — Valentino Braitenberg</p>
+          <p><em><a href="https://www.amazon.com/s?k=Vehicles+Experiments+in+Synthetic+Psychology+Valentino+Braitenberg" target="_blank" rel="noreferrer">Vehicles</a></em> — Valentino Braitenberg</p>
           <p style="margin-top:10px;">From simple mechanisms to complex behavior, with focus on explanation and emergence.</p>
         </article>
       </div>
@@ -118,67 +119,77 @@
       <h2 class="section-title">Apply here</h2>
       <p class="section-intro">Take your time and answer honestly. Specific answers help us find the right group for you.</p>
 
-      <form class="form-wrap" action="https://formspree.io/f/mzdanqwq" method="POST">
+      <form class="form-wrap" action="https://formspree.io/f/mzdanqwq" method="POST" data-application-form>
         <input type="hidden" name="group" value="foundational" />
 
         <div class="form-row">
           <div class="form-group">
             <label for="name">Student name</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" required data-requires-meaningful />
           </div>
           <div class="form-group">
             <label for="grade">Grade (current)</label>
-            <input type="text" id="grade" name="grade" placeholder="e.g. 9th" required />
+            <input type="text" id="grade" name="grade" placeholder="e.g. 9th" required data-requires-meaningful />
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" required />
+            <label for="school_name">School name</label>
+            <input type="text" id="school_name" name="school_name" required data-requires-meaningful />
           </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required data-requires-meaningful />
+          </div>
+        </div>
+
+        <div class="form-row">
           <div class="form-group">
             <label for="email">Email (student or parent)</label>
             <input type="email" id="email" name="email" required />
           </div>
+          <div class="form-group">
+            <label for="topic">Topic preference (current offerings, or your own suggestion)</label>
+            <select id="topic" name="track" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="Physics">Physics — Feynman Lectures, Vol. 1</option>
+              <option value="Mathematics">Mathematics — Proofs from the Book</option>
+              <option value="Minds, Brains, and Machines">Minds, Brains, and Machines — Vehicles</option>
+              <option value="Not sure">Not sure yet</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
         </div>
 
         <div class="form-group">
-          <label for="topic">Topic preference</label>
-          <span class="label-hint">These are current offerings. Choose "Something else" if you want a different topic.</span>
-          <select id="topic" name="track" required>
-            <option value="" disabled selected>Select one</option>
-            <option value="Physics">Physics — Feynman Lectures, Vol. 1</option>
-            <option value="Mathematics">Mathematics — Proofs from the Book</option>
-            <option value="Minds, Brains, and Machines">Minds, Brains, and Machines — Vehicles</option>
-            <option value="Not sure">Not sure yet</option>
-            <option value="Something else">Something else</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="topic_other">If you chose "Something else," tell us what you have in mind.</label>
-          <input type="text" id="topic_other" name="topic_other" />
+          <label for="topic_other">If you want a different topic, tell us what you have in mind.</label>
+          <input
+            type="text"
+            id="topic_other"
+            name="topic_other"
+            data-requires-meaningful
+          />
         </div>
 
         <div class="form-group">
           <label for="q_rabbit_hole">What's the last thing you explored out of curiosity, not because it was assigned?</label>
-          <textarea id="q_rabbit_hole" name="q_rabbit_hole" required></textarea>
+          <textarea id="q_rabbit_hole" name="q_rabbit_hole" required data-requires-sentence></textarea>
         </div>
 
         <div class="form-group">
           <label for="q_dont_understand">Describe something you don't understand yet but genuinely want to understand.</label>
-          <textarea id="q_dont_understand" name="q_dont_understand" required></textarea>
+          <textarea id="q_dont_understand" name="q_dont_understand" required data-requires-sentence></textarea>
         </div>
 
         <div class="form-group">
           <label for="q_hard_read">Have you tried reading something too hard for you? What happened?</label>
-          <textarea id="q_hard_read" name="q_hard_read" required></textarea>
+          <textarea id="q_hard_read" name="q_hard_read" required data-requires-sentence></textarea>
         </div>
 
         <div class="form-group">
           <label for="q_stuck">When you're stuck on something you care about, what do you do?</label>
-          <textarea id="q_stuck" name="q_stuck" required></textarea>
+          <textarea id="q_stuck" name="q_stuck" required data-requires-sentence></textarea>
         </div>
 
         <div class="form-group">
@@ -192,11 +203,11 @@
         <div class="form-row">
           <div class="form-group">
             <label for="parent_name">Parent / guardian name</label>
-            <input type="text" id="parent_name" name="parent_name" required />
+            <input type="text" id="parent_name" name="parent_name" required data-requires-meaningful />
           </div>
           <div class="form-group">
             <label for="parent_relation">Relationship to student</label>
-            <input type="text" id="parent_relation" name="parent_relation" placeholder="e.g. Mother" required />
+            <input type="text" id="parent_relation" name="parent_relation" placeholder="e.g. Mother" required data-requires-meaningful />
           </div>
         </div>
 

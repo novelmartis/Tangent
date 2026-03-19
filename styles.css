@@ -535,6 +535,10 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(200, 90, 42, 0.18);
 }
 
+[data-invalid="true"] {
+  border-color: rgba(255, 138, 101, 0.82);
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
