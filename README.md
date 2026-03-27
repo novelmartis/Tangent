@@ -13,12 +13,14 @@ Static website for Tangent: a serious reading culture for unusually curious stud
 Public pages:
 
 - `index.html`
-- `tracks.html`
+- `our-story.html`
 - `how-it-works.html`
 - `mentors.html`
+- `apply.html`
 - `contact.html`
+- `pricing.html`
+- `tracks.html`
 - `tracks/foundational.html`
-- `tracks/advanced.html`
 
 ## Local Preview
 
@@ -54,7 +56,6 @@ All forms post to:
 Hidden `group` values currently in use:
 
 - `foundational` (Foundational track application)
-- `advanced` (Advanced track application)
 - `contact` (General contact form)
 - `mentor-interest` (Mentor interest form)
 
@@ -70,9 +71,7 @@ Keep wording aligned with current site direction:
 
 - Tangent is **not** tutoring/cram school.
 - Core tone: minimal, serious, warm, high-trust.
-- Advanced track audience: **advanced high school / undergraduate**.
-- Do not use `UG` as public label.
-- Do not reintroduce "Master's" in Advanced track audience copy.
+- Foundational language should stay consistent with the current public terminology: `Grades 7–12`, `small reading groups`, and `Intelligent Behavior`.
 
 ## Repo Conventions
 
@@ -85,6 +84,7 @@ Keep wording aligned with current site direction:
 - Navbar brand mark uses `logo_light.png`.
 - Mentor photos live in `mentor_portraits/`.
 - Track pages use `../` relative paths for shared assets.
+- Archived/non-live material can be kept under `misc/`.
 
 ## Before Committing
 

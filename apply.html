@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Tangent — Apply</title>
+  <meta
+    name="description"
+    content="Apply to Tangent's Foundational Track."
+  />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="form-validation.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-header-inner">
+    <a class="brand" href="index.html" aria-label="Tangent home">
+      <img class="brand-logo" src="logo_light.png" alt="" width="28" height="28" aria-hidden="true" />
+      <span class="brand-word">TANGENT</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="our-story.html">Our Story</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="tracks/foundational.html">Foundational Track</a>
+      <a href="mentors.html">Mentors</a>
+      <a class="active" href="apply.html">Apply</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-eyebrow">Apply</div>
+      <h1>Apply to the Foundational Track.</h1>
+      <p>This form is for students in Grades 7–12 who may be a good fit for Tangent's small reading groups.</p>
+      <div class="hero-actions">
+        <a class="button-secondary" href="tracks/foundational.html">Read about the track first</a>
+        <a class="button-secondary" href="contact.html">General contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label">Before you apply</div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>What happens next</h3>
+          <p>We read every application. If it seems like a good fit, we schedule a short call to talk through placement, timing, and questions.</p>
+        </article>
+        <article class="card">
+          <h3>Pricing</h3>
+          <p>Tangent is paid. The standard fee for the Foundational Track is ₹4,000 per student in India, with subsidies discussed where needed.</p>
+        </article>
+      </div>
+      <p class="notice">The first two groups are free. For students outside India, fees are adjusted for purchasing-power differences.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label">Application</div>
+      <h2 class="section-title">Foundational Track form</h2>
+      <p class="section-intro">Take your time and answer honestly. The point is simply to understand the student well enough to place them in the right group.</p>
+
+      <form class="form-wrap" action="https://formspree.io/f/mzdanqwq" method="POST" data-application-form>
+        <input type="hidden" name="group" value="foundational" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Student name</label>
+            <input type="text" id="name" name="name" required data-requires-meaningful />
+          </div>
+          <div class="form-group">
+            <label for="grade">Grade (current)</label>
+            <input type="text" id="grade" name="grade" placeholder="e.g. 9th" required data-requires-meaningful />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="school_name">School name</label>
+            <input type="text" id="school_name" name="school_name" required data-requires-meaningful />
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required data-requires-meaningful />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email (student or parent)</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="topic">Subject area of interest</label>
+            <select id="topic" name="track" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="Physics">Physics</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Intelligent Behavior">Intelligent Behavior</option>
+              <option value="Not sure">Not sure yet</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="topic_other">If you want a different topic, tell us what you have in mind.</label>
+          <input
+            type="text"
+            id="topic_other"
+            name="topic_other"
+            data-requires-meaningful
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="q_rabbit_hole">What is something the student explored recently out of curiosity, not because it was assigned?</label>
+          <textarea id="q_rabbit_hole" name="q_rabbit_hole" required data-requires-sentence></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="q_dont_understand">What is something the student genuinely wants to understand better?</label>
+          <textarea id="q_dont_understand" name="q_dont_understand" required data-requires-sentence></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="q_hard_read">What usually happens when the reading gets hard?</label>
+          <textarea id="q_hard_read" name="q_hard_read" required data-requires-sentence></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="q_other">Anything else you would like us to know?</label>
+          <textarea id="q_other" name="q_other" style="min-height:90px;"></textarea>
+        </div>
+
+        <hr class="form-divider" />
+        <p class="form-section-title">Parent / guardian</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="parent_name">Parent / guardian name</label>
+            <input type="text" id="parent_name" name="parent_name" required data-requires-meaningful />
+          </div>
+          <div class="form-group">
+            <label for="parent_relation">Relationship to student</label>
+            <input type="text" id="parent_relation" name="parent_relation" placeholder="e.g. Mother" required data-requires-meaningful />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="parent_whatsapp">WhatsApp number (optional)</label>
+          <input type="tel" id="parent_whatsapp" name="parent_whatsapp" placeholder="e.g. +91 98765 43210" />
+        </div>
+
+        <div class="form-group">
+          <label for="parent_note">Anything you'd like us to know?</label>
+          <textarea id="parent_note" name="parent_note" style="min-height:90px;"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="filled_independently">Did the student fill this out themselves?</label>
+          <select id="filled_independently" name="filled_independently" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Yes">Yes</option>
+            <option value="Mostly">Mostly (with some help)</option>
+            <option value="Together">We filled it together</option>
+          </select>
+        </div>
+
+        <button class="button" type="submit" style="width:100%;">Send Foundational Application</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="container page-footer-inner">
+    <span class="footer-name">TANGENT</span>
+    <a class="footer-link" href="LICENSE">© 2026 Sushrut Thorat</a>
+  </div>
+</footer>
+</body>
+</html>

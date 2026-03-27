@@ -97,12 +97,12 @@ img { max-width: 100%; display: block; }
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 14px;
 }
 
 .main-nav a {
   font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -151,7 +151,6 @@ img { max-width: 100%; display: block; }
   margin: 0;
   color: var(--muted);
   font-size: 20px;
-  font-style: italic;
 }
 
 .inline-highlight {
@@ -171,6 +170,11 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.hero-panel {
+  margin-top: 28px;
+  max-width: 780px;
 }
 
 .button,
@@ -286,11 +290,42 @@ section {
   box-shadow: 0 10px 24px rgba(8, 12, 20, 0.28);
 }
 
+.choice-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.choice-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.choice-card .inline-links {
+  margin-top: auto;
+}
+
+.card-muted {
+  background: rgba(24, 35, 60, 0.74);
+}
+
 .card h3 {
   margin: 0 0 8px;
   font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
   font-size: 21px;
   color: var(--white);
+}
+
+.card-kicker {
+  margin-bottom: 10px;
+  font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 .card p {
@@ -400,8 +435,7 @@ section {
   font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .profile-grid {
@@ -624,6 +658,7 @@ textarea { min-height: 130px; resize: vertical; }
 
 @media (max-width: 920px) {
   .split,
+  .choice-grid,
   .grid-3,
   .grid-2,
   .profile-grid {

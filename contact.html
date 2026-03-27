@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Tangent — Contact</title>
-  <meta name="description" content="General contact for Tangent, plus direct links to Foundational and Advanced applications." />
+  <meta
+    name="description"
+    content="General contact for Tangent."
+  />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -23,10 +26,11 @@
     </a>
     <nav class="main-nav" aria-label="Primary">
       <a href="index.html">Home</a>
-      <a href="tracks.html">Tracks</a>
-      <a href="how-it-works.html">How it Works</a>
+      <a href="our-story.html">Our Story</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="tracks/foundational.html">Foundational Track</a>
       <a href="mentors.html">Mentors</a>
-      <a href="pricing.html">Pricing</a>
+      <a href="apply.html">Apply</a>
       <a class="active" href="contact.html">Contact</a>
     </nav>
   </div>
@@ -36,21 +40,19 @@
   <section class="page-hero">
     <div class="container">
       <div class="hero-eyebrow">Contact</div>
-      <h1>Questions before applying?</h1>
-      <p>If you are unsure where you fit, write here. Students, undergraduates, and parents are all welcome.</p>
+      <h1>General contact.</h1>
+      <p>If you have a question about fit, scheduling, future formats, or anything else, write here. If you are ready to apply, use the Apply page.</p>
       <div class="hero-actions">
-        <a class="button" href="tracks/foundational.html#apply">Apply to Foundational</a>
-        <a class="button" href="tracks/advanced.html#apply">Apply to Advanced</a>
+        <a class="button-secondary" href="apply.html">Go to Apply</a>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="general-form">
     <div class="container">
-      <div class="section-label">General contact</div>
+      <div class="section-label">General inquiry</div>
       <h2 class="section-title">Send a message</h2>
-      <p class="section-intro">Tangent is paid. For full fee and subsidy details, see the <a href="pricing.html">Pricing</a> page.</p>
-      <p class="section-intro" style="margin-top:12px;">We are especially interested in students with genuine curiosity and a willingness to prepare and discuss seriously.</p>
+      <p class="section-intro">We read every message. If Tangent seems like it may be a good fit, we reply with the next step.</p>
 
       <form class="form-wrap" action="https://formspree.io/f/mzdanqwq" method="POST">
         <input type="hidden" name="group" value="contact" />
@@ -71,9 +73,9 @@
             <label for="c_subject">What is this about?</label>
             <select id="c_subject" name="subject" required>
               <option value="" disabled selected>Select one</option>
-              <option value="Question about Foundational">Question about Foundational</option>
-              <option value="Question about Advanced">Question about Advanced</option>
+              <option value="Foundational question">Question about Foundational</option>
               <option value="Parent question">Parent question</option>
+              <option value="Future formats">Question about future formats</option>
               <option value="General question">General question</option>
             </select>
           </div>
