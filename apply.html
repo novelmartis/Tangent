@@ -123,7 +123,19 @@
             id="topic_other"
             name="topic_other"
             data-requires-meaningful
+            data-required-when-field="topic"
+            data-required-when-value="Something else"
+            data-required-message="Please tell us what topic you have in mind."
           />
+        </div>
+
+        <div class="form-group">
+          <label for="mentor_discussion">Has the student already spoken with a Tangent mentor?</label>
+          <select id="mentor_discussion" name="mentor_discussion" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
         </div>
 
         <div class="form-group">
