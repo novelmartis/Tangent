@@ -634,19 +634,36 @@ textarea { min-height: 130px; resize: vertical; }
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 10px;
 }
 
-.inline-links a {
+.inline-links a,
+.inline-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  box-sizing: border-box;
   font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  line-height: 1;
   border: 1px solid var(--faint);
   border-radius: 999px;
   padding: 6px 12px;
   color: rgba(255, 255, 255, 0.86);
+}
+
+.inline-badge {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--white);
+}
+
+.inline-links a {
   text-decoration: none;
 }
 
