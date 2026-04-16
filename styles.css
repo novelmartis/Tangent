@@ -215,12 +215,18 @@ img { max-width: 100%; display: block; }
 }
 
 section {
-  padding: 56px 0;
-  border-top: 1px solid var(--faint);
+  padding: 32px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-tail {
+  padding-top: 18px;
+  padding-bottom: 16px;
+  border-top: 0;
 }
 
 .interlude-section {
-  padding: 28px 0 20px;
+  padding: 18px 0 12px;
 }
 
 .interlude-quote {
@@ -403,6 +409,44 @@ section {
   margin: 0;
   color: rgba(255, 255, 255, 0.86);
   font-size: 16px;
+}
+
+.community-bar {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 22px 24px;
+  background: linear-gradient(135deg, rgba(25, 52, 46, 0.96), rgba(21, 40, 36, 0.92));
+  border: 1px solid rgba(124, 221, 168, 0.2);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+.community-bar h2 {
+  margin: 0 0 8px;
+  font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+  font-size: clamp(24px, 3vw, 30px);
+  line-height: 1.12;
+  color: var(--white);
+}
+
+.community-bar p {
+  margin: 0;
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.whatsapp-button {
+  white-space: nowrap;
+  background: #25D366;
+  border-color: #25D366;
+  box-shadow: 0 8px 18px rgba(37, 211, 102, 0.22);
+}
+
+.whatsapp-button:hover {
+  opacity: 0.94;
 }
 
 .profile {
@@ -678,7 +722,8 @@ textarea { min-height: 130px; resize: vertical; }
   .choice-grid,
   .grid-3,
   .grid-2,
-  .profile-grid {
+  .profile-grid,
+  .community-bar {
     grid-template-columns: 1fr;
   }
 
