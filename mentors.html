@@ -128,7 +128,7 @@
       <h2 class="section-title">Interested in mentoring with Tangent?</h2>
       <p class="section-intro">Researchers, teachers, and domain experts who care about serious small-group mentoring are welcome to write in.</p>
 
-      <form class="form-wrap" action="https://formspree.io/f/mzdanqwq" method="POST">
+      <form class="form-wrap" action="https://formspree.io/f/mzdanqwq" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="group" value="mentor-interest" />
 
         <div class="form-row">
@@ -143,8 +143,19 @@
         </div>
 
         <div class="form-group">
-          <label for="m_role">Role / affiliation</label>
-          <input type="text" id="m_role" name="role_affiliation" required />
+          <label for="m_whatsapp">WhatsApp number</label>
+          <input type="tel" id="m_whatsapp" name="whatsapp" placeholder="e.g. +91 98765 43210" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="m_role">Role</label>
+            <input type="text" id="m_role" name="role" placeholder="e.g. PhD student, professor, engineer" required />
+          </div>
+          <div class="form-group">
+            <label for="m_institution">Institute / company</label>
+            <input type="text" id="m_institution" name="institute_company" required />
+          </div>
         </div>
 
         <div class="form-group">
@@ -155,12 +166,14 @@
         <div class="form-row">
           <div class="form-group">
             <label for="m_profile">Website / LinkedIn / profile link</label>
-            <input type="url" id="m_profile" name="profile_link" placeholder="https://..." />
+            <input type="url" id="m_profile" name="profile_link" placeholder="https://..." required />
           </div>
-          <div class="form-group">
-            <label for="m_timing">Preferred timing</label>
-            <input type="text" id="m_timing" name="timing" required />
-          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="m_cv">CV</label>
+          <input class="file-input" type="file" id="m_cv" name="cv" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required />
+          <p class="label-hint">PDF preferred.</p>
         </div>
 
         <button class="button" type="submit" style="width:100%;">Express Interest in Mentorship</button>
