@@ -1,76 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="200mm"
-   height="200mm"
-   viewBox="0 0 200 200"
-   version="1.1"
-   id="svg1"
-   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
-   sodipodi:docname="favicon.svg"
-   inkscape:export-filename="apple-touch-icon.png"
-   inkscape:export-xdpi="22.860001"
-   inkscape:export-ydpi="22.860001"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="true"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="0.29366644"
-     inkscape:cx="260.49963"
-     inkscape:cy="294.55187"
-     inkscape:window-width="1352"
-     inkscape:window-height="738"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
-  <defs
-     id="defs1" />
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <g
-       inkscape:groupmode="layer"
-       id="layer4"
-       inkscape:label="Layer 4"
-       transform="matrix(1.1137397,0,0,1.1137397,-6.6966785,-3.4977591)">
-      <rect
-         style="font-variation-settings:'wght' 600;opacity:1;fill:#101a30;fill-opacity:1;stroke-width:2.21775"
-         id="rect2"
-         width="184.3674"
-         height="184.85258"
-         x="3.101722"
-         y="0.22948931" />
-    </g>
-    <g
-       id="g3"
-       transform="matrix(1.1137397,0,0,1.1137397,-6.6966785,-3.4977591)">
-      <g
-         id="g2">
-        <path
-           id="path1"
-           style="fill:#cfd5e4;fill-opacity:1;stroke-width:0.196108"
-           d="m 77.223099,95.157475 a 37.800948,37.800948 0 0 0 -24.60426,9.103675 37.800948,37.800948 0 0 1 13.059556,-2.32763 37.800948,37.800948 0 0 1 37.800935,37.80095 A 37.800948,37.800948 0 0 1 90.282657,168.4321 37.800948,37.800948 0 0 0 115.02402,132.95841 37.800948,37.800948 0 0 0 77.223099,95.157475 Z"
-           inkscape:export-filename="logo_dark.png"
-           inkscape:export-xdpi="96"
-           inkscape:export-ydpi="96" />
-      </g>
-      <path
-         id="rect1"
-         style="font-variation-settings:'wght' 600;fill:#c85a2a;fill-opacity:1;stroke-width:3.20114"
-         d="M 97.814843,18.23558 86.188679,21.350635 125.60023,168.43623 h 12.46074 z" />
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Tangent">
+  <g transform="translate(8 4) scale(1.1137397)">
+    <path
+      fill="#cfd5e4"
+      d="m77.223 95.157a37.801 37.801 0 0 0-24.604 9.104 37.801 37.801 0 0 1 13.06-2.328 37.801 37.801 0 0 1 37.801 37.801 37.801 37.801 0 0 1-13.197 28.698 37.801 37.801 0 0 0 24.741-35.474 37.801 37.801 0 0 0-37.801-37.801Z"
+    />
+    <path
+      fill="#c85a2a"
+      d="M97.815 18.236 86.189 21.351 125.6 168.436h12.461Z"
+    />
   </g>
 </svg>
