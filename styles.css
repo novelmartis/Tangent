@@ -844,6 +844,7 @@ section {
   max-width: 560px;
   justify-self: end;
   align-self: stretch;
+  margin-top: 10px;
 }
 
 .story-opening-image {
