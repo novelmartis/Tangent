@@ -32,6 +32,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   forms.forEach((form) => {
     const fields = Array.from(form.querySelectorAll("input, textarea, select"));
+    const checkboxGroups = Array.from(form.querySelectorAll("[data-checkbox-group]"));
+
+    const getFieldValue = (field) => {
+      if (field.tagName === "SELECT" && field.multiple) {
+        return Array.from(field.selectedOptions).map((option) => option.value);
+      }
+
+      return field.value;
+    };
+
+    const fieldHasRequiredValue = (fieldValue, requiredValue) => {
+      if (Array.isArray(fieldValue)) {
+        return fieldValue.includes(requiredValue);
+      }
+
+      return fieldValue === requiredValue;
+    };
 
     const syncConditionalRequirements = () => {
       fields.forEach((field) => {
@@ -43,7 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         const controller = form.querySelector(`#${controllerId}`);
-        const shouldRequire = controller && controller.value === requiredValue;
+        const controllerValue = controller ? getFieldValue(controller) : "";
+        const shouldRequire = controller && fieldHasRequiredValue(controllerValue, requiredValue);
         field.required = Boolean(shouldRequire);
       });
     };
@@ -57,13 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
         return true;
       }
 
-      const value = normalizeValue(field.value);
+      const rawValue = getFieldValue(field);
+      const value = Array.isArray(rawValue) ? rawValue : normalizeValue(rawValue);
+      const hasValue = Array.isArray(value) ? value.length > 0 : Boolean(value);
 
-      if (field.required && !value) {
+      if (field.required && !hasValue) {
         field.setCustomValidity(field.dataset.requiredMessage || "This field is required.");
-      } else if (value && field.dataset.requiresSentence !== undefined && !hasSentenceLikeAnswer(value)) {
+      } else if (!Array.isArray(value) && value && field.dataset.requiresSentence !== undefined && !hasSentenceLikeAnswer(value)) {
         field.setCustomValidity("Please write at least one full sentence.");
-      } else if (value && field.dataset.requiresMeaningful !== undefined && !hasMeaningfulText(value)) {
+      } else if (!Array.isArray(value) && value && field.dataset.requiresMeaningful !== undefined && !hasMeaningfulText(value)) {
         field.setCustomValidity(field.dataset.meaningfulMessage || "Please enter a real answer.");
       }
 
@@ -80,10 +100,25 @@ document.addEventListener("DOMContentLoaded", () => {
       return isValid;
     };
 
+    const validateCheckboxGroup = (group) => {
+      const boxes = Array.from(group.querySelectorAll('input[type="checkbox"]'));
+      const hasSelection = boxes.some((box) => box.checked);
+
+      if (hasSelection) {
+        group.removeAttribute("data-invalid");
+        boxes.forEach((box) => box.setAttribute("aria-invalid", "false"));
+        return true;
+      }
+
+      group.setAttribute("data-invalid", "true");
+      boxes.forEach((box) => box.setAttribute("aria-invalid", "true"));
+      return false;
+    };
+
     syncConditionalRequirements();
 
     fields.forEach((field) => {
-      const eventName = field.tagName === "SELECT" ? "change" : "input";
+      const eventName = field.tagName === "SELECT" || field.type === "checkbox" ? "change" : "input";
 
       field.addEventListener(eventName, () => {
         syncConditionalRequirements();
@@ -93,6 +128,16 @@ document.addEventListener("DOMContentLoaded", () => {
       field.addEventListener("blur", () => {
         syncConditionalRequirements();
         validateField(field);
+      });
+    });
+
+    checkboxGroups.forEach((group) => {
+      const boxes = group.querySelectorAll('input[type="checkbox"]');
+
+      boxes.forEach((box) => {
+        box.addEventListener("change", () => {
+          validateCheckboxGroup(group);
+        });
       });
     });
 
@@ -109,9 +154,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
+      checkboxGroups.forEach((group) => {
+        const isValid = validateCheckboxGroup(group);
+
+        if (!isValid && !firstInvalidField) {
+          firstInvalidField = group.querySelector('input[type="checkbox"]');
+        }
+      });
+
       if (firstInvalidField) {
         event.preventDefault();
-        firstInvalidField.reportValidity();
+        if (firstInvalidField.type !== "checkbox") {
+          firstInvalidField.reportValidity();
+        }
         firstInvalidField.focus();
       }
     });

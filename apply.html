@@ -139,28 +139,44 @@
             <input type="email" id="email" name="email" required />
           </div>
           <div class="form-group">
-            <label for="topic">Track of interest</label>
-            <select id="topic" name="track" required>
-              <option value="" disabled selected>Select one</option>
-              <option value="Physics">Physics</option>
-              <option value="Mathematics">Mathematics</option>
-              <option value="Intelligent Behavior">Intelligent Behavior</option>
-              <option value="Not sure">Not sure yet</option>
-              <option value="Something else">Something else</option>
-            </select>
+            <span id="topic-label">Tracks of interest</span>
+            <p class="form-help">Choose one or more.</p>
+            <fieldset class="checkbox-group" data-checkbox-group="track" aria-labelledby="topic-label">
+              <label class="checkbox-option">
+                <input type="checkbox" name="track[]" value="Intelligent Behavior" />
+                <span>Intelligent Behavior</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="track[]" value="Physics" />
+                <span>Physics</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="track[]" value="Mathematics" />
+                <span>Mathematics</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="track[]" value="Computing and Algorithms" />
+                <span>Computing and Algorithms</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="track[]" value="Biology and Evolution" />
+                <span>Biology and Evolution</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="track[]" value="Chemistry / Materials" />
+                <span>Chemistry / Materials</span>
+              </label>
+            </fieldset>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="topic_other">If you want a different topic, tell us what you have in mind.</label>
+          <label for="topic_other">If there's another track you have in mind, tell us what it is.</label>
           <input
             type="text"
             id="topic_other"
             name="topic_other"
             data-requires-meaningful
-            data-required-when-field="topic"
-            data-required-when-value="Something else"
-            data-required-message="Please tell us what topic you have in mind."
           />
         </div>
 
@@ -189,7 +205,7 @@
         </div>
 
         <div class="form-group">
-          <label for="q_other">Anything else you would like us to know?</label>
+          <label for="q_other">Anything else you'd like us to know about you?</label>
           <textarea id="q_other" name="q_other" style="min-height:90px;"></textarea>
         </div>
 
