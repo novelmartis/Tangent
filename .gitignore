@@ -4,6 +4,10 @@
 # Local operational docs (do not sync)
 local-ops/
 
+# Local scratch and prototype files
+brand-whisper-options.html
+mentor_portraits/
+
 # Generated marketing assets (built from scripts, not source)
 tangent-flyer.pdf
 tangent-flyer.html

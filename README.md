@@ -36,6 +36,12 @@ Open:
 
 Stop with `Ctrl+C`.
 
+## Local-Only Workspace
+
+- `local-ops/` is intentionally gitignored.
+- Keep prototypes, exported proofs, archived alternates, and other non-live working files there.
+- Keep the repo root focused on the public site and the assets it actually serves.
+
 ## Deployment
 
 - Deployment target: GitHub Pages (branch-based static hosting).
