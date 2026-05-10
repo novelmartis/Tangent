@@ -1808,11 +1808,16 @@ select:focus-visible {
 
   .brand-whisper {
     font-size: 16px;
-    transform: translateY(0);
+    transform: translateY(1px);
+  }
+
+  .footer-mark {
+    align-items: center;
   }
 
   .footer-whisper {
     font-size: 14px;
+    transform: translateY(1px);
   }
 
   .main-nav {
