@@ -233,7 +233,7 @@ img {
 
 .brand-whisper {
   margin-left: -2px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--brick);
   font-family: "Allura", "Brush Script MT", cursive;
   font-size: 20px;
   font-weight: 400;
@@ -249,7 +249,7 @@ img {
 }
 
 .footer-whisper {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--brick);
   font-family: "Allura", "Brush Script MT", cursive;
   font-size: 16px;
   font-weight: 400;
