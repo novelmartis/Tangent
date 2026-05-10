@@ -41,12 +41,12 @@ Stop with `Ctrl+C`.
 - Deployment target: GitHub Pages (branch-based static hosting).
 - Push commits to the publishing branch configured in repository settings.
 - No separate build artifact is required.
-- Current SEO/canonical URL assumption in the live files: `https://www.sushrutthorat.com/Tangent/`
+- Current SEO/canonical URL assumption in the live files: `https://tangent-fellows.com/`
 
 ## License
 
 - Source code is licensed under **PolyForm Noncommercial 1.0.0**. See `LICENSE`.
-- Only source-code files are licensed under **PolyForm Noncommercial 1.0.0**. The Tangent name, logo, visual identity, and all non-code website content are **all rights reserved**. Commercial use requires prior written permission.
+- Only source-code files are licensed under **PolyForm Noncommercial 1.0.0**. The Tangent Fellows name, the Tangent name, logo, visual identity, and all non-code website content are **all rights reserved**. Commercial use requires prior written permission.
 
 ## Forms (Formspree)
 
