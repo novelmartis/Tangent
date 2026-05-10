@@ -1,16 +1,19 @@
 # Tangent Website
 
-Static website for Tangent: a warm, serious small-group reading and discussion program for students in Grades 7-12.
+Static marketing site for **Tangent Fellows**, a small-group reading and discussion program for students in grades 7-12.
 
-## What This Repo Is
+## Overview
 
-- No build step, no framework.
-- Plain HTML/CSS site, deployed via GitHub Pages.
-- All pages share one stylesheet: `styles.css`.
+- **Stack:** plain HTML, CSS, and a small amount of vanilla JavaScript
+- **Hosting:** GitHub Pages
+- **Canonical domain:** `https://tangent-fellows.com/`
+- **Build step:** none
 
-## Live Information Architecture
+The repo is intentionally simple. Public pages are hand-authored, shared styles live in one stylesheet, and deployment is branch-based.
 
-Public pages:
+## Site Map
+
+Live public pages:
 
 - `index.html`
 - `our-story.html`
@@ -19,110 +22,122 @@ Public pages:
 - `mentors.html`
 - `apply.html`
 - `contact.html`
-- `tracks/foundational.html` redirects to `tracks.html` for older links.
-- `tracks/advanced.html` is a separate future-facing advanced offering page.
+- `pricing.html`
+- `tracks/advanced.html`
 
-## Local Preview
+Compatibility redirect:
 
-Run from repo root:
+- `tracks/foundational.html` redirects legacy links to `tracks.html`
+
+## Project Structure
+
+- `styles.css`: shared global stylesheet for the public site
+- `form-validation.js`: lightweight client-side form behavior and validation
+- `images/`: live content imagery used by the website
+- `fonts/`: bundled webfonts used by the live site
+- `local-ops/`: local-only prototypes, proofs, exports, and archived working files
+- `misc/`: reserved for small non-live text references if needed
+
+## Local Development
+
+From the repo root:
 
 ```bash
 python3 -m http.server 3000 --bind 127.0.0.1
 ```
 
-Open:
+Then open:
 
 - `http://127.0.0.1:3000/index.html`
 
-Stop with `Ctrl+C`.
-
-## Local-Only Workspace
-
-- `local-ops/` is intentionally gitignored.
-- Keep prototypes, exported proofs, archived alternates, and other non-live working files there.
-- Keep the repo root focused on the public site and the assets it actually serves.
+Stop the server with `Ctrl+C`.
 
 ## Deployment
 
-- Deployment target: GitHub Pages (branch-based static hosting).
-- Push commits to the publishing branch configured in repository settings.
-- No separate build artifact is required.
-- Current SEO/canonical URL assumption in the live files: `https://tangent-fellows.com/`
+- Deployment target is **GitHub Pages**
+- Publishing source is the configured branch in repository settings
+- No build artifact or bundling step is required
+- A root `CNAME` file pins the custom domain
 
-## License
+When changing domains or share metadata, update all of the following together:
 
-- Source code is licensed under **PolyForm Noncommercial 1.0.0**. See `LICENSE`.
-- Only source-code files are licensed under **PolyForm Noncommercial 1.0.0**. The Tangent Fellows name, the Tangent name, logo, visual identity, and all non-code website content are **all rights reserved**. Commercial use requires prior written permission.
+- page-level `canonical` tags
+- `og:url`
+- absolute `og:image` and `twitter:image` URLs
+- homepage structured data in `index.html`
+- `robots.txt`
+- `sitemap.xml`
 
-## Forms (Formspree)
+## Forms
 
-All forms post to:
+All forms currently post to:
 
 - `https://formspree.io/f/mzdanqwq`
 
-Hidden `group` values currently in use:
+Stable hidden `group` values:
 
-- `foundational` (Tracks application form; retained as a stable Formspree value)
-- `contact` (General contact form)
-- `mentor-interest` (Mentor interest form)
+- `foundational`: track application form
+- `contact`: general contact form
+- `mentor-interest`: mentor interest form
 
-When editing forms, keep:
+When editing forms:
 
-- `action` URL unchanged unless intentionally migrating providers.
-- `name` attributes stable so submissions remain structured.
-- Required fields aligned with current selection workflow.
+- keep the Formspree `action` stable unless intentionally migrating providers
+- preserve field `name` attributes unless submission handling is also being updated
+- keep required states aligned with the visible selection flow
 
-## Copy and Positioning Guardrails
+## Content and Brand Guardrails
 
-Keep wording aligned with current site direction:
+Keep public-facing copy aligned with the current site direction:
 
-- Tangent is **not** tutoring/cram school.
-- Core tone: warm, serious, inviting, and high-trust.
-- Prefer `group` over `cohort` in visible public copy unless there is a strong reason otherwise.
-- Current homepage age-language is `For students in grades 7-12`.
-- Keep copy short and scannable; avoid startup jargon, inflated claims, and generic education language.
-- Track names and current active public framing:
-  - `Intelligent Behavior`
-  - `Physics`
-  - `Mathematics`
+- Tangent is not framed as tutoring, tuition, or cram-school
+- tone should remain warm, serious, inviting, and high-trust
+- prefer `group` over `cohort` in visible public copy unless there is a strong reason not to
+- current homepage age language is `For students in grades 7-12`
+- keep copy concise and scannable
+- avoid startup jargon, inflated claims, and generic education language
 
-## Repo Conventions
+Current public track framing:
 
-- Favicon stack in root:
+- `Intelligent Behavior`
+- `Physics`
+- `Mathematics`
+
+## Asset Conventions
+
+- Favicon stack lives at the repo root:
   - `favicon.svg`
   - `favicon-48x48.png`
   - `favicon-32x32.png`
   - `favicon-16x16.png`
   - `favicon.ico`
   - `apple-touch-icon.png`
-- Navbar brand mark uses `logo_light.png`.
-- Mentor photos for the website live in `images/mentor_portraits/`.
-- Core image set currently used by the live site:
-  - `images/braitenberg-vehicle-diagram.png`
-  - `images/braitenberg-vehicles-cover.jpg`
-  - `images/feynman-lectures-diagrams.svgz`
-  - `images/feynman-lectures.jpg`
-  - `images/math-diagram.jpg`
-  - `images/proofs-from-the-book-cover.jpg`
-  - `images/einstein_portrait.jpg`
-  - `images/raman_portrait.JPG`
-  - `images/curie_portrait.jpg`
-  - `images/noether_portrait.jpg`
-  - `images/bose_portrait.jpg`
-  - `images/sahyadri-2.jpg`
-  - `images/sahyadri-3.jpg`
-  - `images/sahyadri-4.jpg`
-- Track pages use `../` relative paths for shared assets.
-- Archived/non-live material can be kept under `misc/`.
+- Navbar brand mark uses `logo_light.png`
+- Share metadata and structured data use `logo_dark.png`
+- Mentor portraits used by the live site live in `images/mentor_portraits/`
+- Track subpages use `../` relative paths for shared assets
 
-## Before Committing
+## Repo Hygiene
 
-Quick checks:
+- `local-ops/` is intentionally gitignored
+- keep prototypes, exported proofs, alternate layouts, and experimental assets there
+- keep the repo root focused on the live public site and the assets it actually serves
+- avoid committing scratch HTML files, duplicate asset folders, or one-off review artifacts
 
-1. Internal links resolve across all HTML pages.
-2. Forms still submit to Formspree endpoint and correct `group` values.
-3. Navigation is consistent on all pages.
-4. Favicon links are present in each page head.
-5. Browser/page titles are simple, page-specific, and consistent with the public navigation.
-6. Copy remains consistent with positioning guardrails above.
-7. Home page remains the visual anchor for spacing and hierarchy across the rest of the site.
+## License
+
+- Source code is licensed under **PolyForm Noncommercial 1.0.0**. See `LICENSE`
+- Only source-code files are licensed under **PolyForm Noncommercial 1.0.0**
+- The **Tangent Fellows** name, the **Tangent** name, logo, visual identity, and all non-code website content are **all rights reserved**
+
+## Release Checklist
+
+Before pushing a public change:
+
+1. Internal navigation resolves across all live HTML pages.
+2. Local asset references still resolve.
+3. Forms still post to the correct Formspree endpoint and hidden `group` values.
+4. Browser titles remain short and page-specific.
+5. SEO metadata remains consistent with the canonical domain.
+6. Homepage spacing and hierarchy still act as the visual reference for the rest of the site.
+7. No non-live prototype artifacts are being introduced into the tracked repo.
