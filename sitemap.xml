@@ -1,39 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://tangent-fellows.com/</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://tangent-fellows.com/our-story.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://tangent-fellows.com/how-it-works.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://tangent-fellows.com/tracks.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://tangent-fellows.com/mentors.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://tangent-fellows.com/apply.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://tangent-fellows.com/contact.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://tangent-fellows.com/pricing.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://tangent-fellows.com/tracks/advanced.html</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
+  <!-- Search indexing is intentionally disabled; see SEARCH_INDEXING.md. -->
 </urlset>

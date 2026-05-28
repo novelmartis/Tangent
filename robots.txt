@@ -1,3 +1,5 @@
 User-agent: *
-Allow: /
-Sitemap: https://tangent-fellows.com/sitemap.xml
+Disallow: /
+
+# Search indexing is intentionally disabled for all of Tangent.
+# See SEARCH_INDEXING.md before changing this.
