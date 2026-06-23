@@ -1409,6 +1409,10 @@ section {
   padding: 20px 0;
 }
 
+.mentor-mission-principle {
+  grid-column: 1 / -1;
+}
+
 .mentor-card .inline-links {
   margin-top: auto;
 }
@@ -1635,6 +1639,11 @@ select:focus-visible {
 .ongoing-list {
   margin: 12px 0 0;
   padding-left: 18px;
+}
+
+.track-summary-panel {
+  height: 220px;
+  overflow-y: auto;
 }
 
 .ongoing-list li {
