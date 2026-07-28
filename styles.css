@@ -1687,6 +1687,12 @@ select:focus-visible {
   overflow-y: auto;
 }
 
+.track-empty-state {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .ongoing-list li {
   margin-bottom: 8px;
   color: var(--ink);
