@@ -561,7 +561,16 @@ section {
 
 .track-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.track-grid-compact {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-self: start;
   align-items: start;
+  gap: 20px;
 }
 
 .mentor-grid {
@@ -1214,7 +1223,6 @@ section {
 
 .track-card {
   display: flex;
-  min-height: 100%;
   overflow: hidden;
   flex-direction: column;
 }
@@ -1762,15 +1770,23 @@ select:focus-visible {
   .why-grid,
   .community-bar,
   .grid-3,
-  .track-grid,
   .mentor-grid,
   .week-grid,
   .belief-grid {
     grid-template-columns: 1fr;
   }
 
+  .track-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .track-card-featured {
     grid-column: span 1;
+  }
+
+  .track-grid-compact {
+    grid-column: span 2;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .hero-collage {
@@ -2004,6 +2020,17 @@ select:focus-visible {
     width: 100%;
   }
 
+}
+
+@media (max-width: 620px) {
+  .track-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .track-grid-compact {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 520px) {
