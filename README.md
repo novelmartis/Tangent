@@ -101,8 +101,9 @@ Current public track framing:
 
 - `Intelligent Behavior`
 - `Physics`
-- `Mathematics`
 - `Neuroscience`
+- `Design`
+- `Mathematics`
 
 ## Asset Conventions
 
