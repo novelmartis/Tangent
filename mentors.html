@@ -30,7 +30,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20260502-favicon-clean" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260502-favicon-clean" />
   <link rel="shortcut icon" href="favicon.ico?v=20260502-favicon-clean" />
-  <link rel="stylesheet" href="styles.css?v=20260831-mentor-natural-height" />
+  <link rel="stylesheet" href="styles.css?v=20260914-tally-contrast" />
 </head>
 <body>
 <header class="site-header">
@@ -166,54 +166,18 @@
       <h2 class="section-title">Interested in mentoring with Tangent?</h2>
       <p class="section-intro">Researchers, teachers, and domain experts who care about serious small-group mentoring are welcome to write in.</p>
 
-      <form class="form-wrap" action="https://formspree.io/f/mzdanqwq" method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="group" value="mentor-interest" />
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="m_name">Name</label>
-            <input type="text" id="m_name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="m_email">Email</label>
-            <input type="email" id="m_email" name="email" required />
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="m_whatsapp">WhatsApp number</label>
-          <input type="tel" id="m_whatsapp" name="whatsapp" placeholder="e.g. +91 98765 43210" required />
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="m_role">Role</label>
-            <input type="text" id="m_role" name="role" placeholder="e.g. PhD student, professor, engineer" required />
-          </div>
-          <div class="form-group">
-            <label for="m_institution">Institute / company</label>
-            <input type="text" id="m_institution" name="institute_company" required />
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="m_areas">Areas you can mentor</label>
-          <textarea id="m_areas" name="areas" required></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="m_profile">Website / LinkedIn / profile link</label>
-          <input type="url" id="m_profile" name="profile_link" placeholder="https://..." required />
-        </div>
-
-        <div class="form-group">
-          <label for="m_cv">CV</label>
-          <input class="file-input" type="file" id="m_cv" name="cv" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required />
-          <p class="label-hint">PDF only.</p>
-        </div>
-
-        <button class="button" type="submit" style="width:100%;">Express Interest in Mentorship</button>
-      </form>
+      <div class="form-wrap mentor-application">
+        <iframe
+          src="https://tally.so/embed/MeW6WY?alignLeft=1&amp;hideTitle=1&amp;dynamicHeight=1"
+          loading="eager"
+          width="100%"
+          height="1200"
+          style="display:block;border:0;"
+          title="Tangent mentor application"
+        ></iframe>
+      </div>
+      <p class="label-hint mentor-application-help">Having trouble with the form? <a href="https://tally.so/r/MeW6WY" target="_blank" rel="noopener noreferrer">Open the mentor application in a new tab</a>.</p>
+      <script async src="https://tally.so/widgets/embed.js"></script>
     </div>
   </section>
 </main>

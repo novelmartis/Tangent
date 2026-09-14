@@ -1503,6 +1503,21 @@ section {
   padding: 24px;
 }
 
+.mentor-application {
+  padding: clamp(16px, 3vw, 32px);
+  background: #fff;
+  color: #1f2937;
+  color-scheme: light;
+}
+
+.mentor-application iframe {
+  background: #fff;
+}
+
+.mentor-application-help {
+  margin-top: 16px;
+}
+
 .form-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
