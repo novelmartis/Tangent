@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Search indexing is intentionally disabled; see SEARCH_INDEXING.md. -->
-  <meta name="robots" content="noindex, nofollow" />
-  <title>Tangent</title>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <title>Tangent Fellows | Small-Group Reading for Grades 7–12</title>
   <meta
     name="description"
     content="Tangent Fellows is a small-group reading and discussion program for curious students in grades 7-12."
@@ -14,6 +13,7 @@
   <meta name="theme-color" content="#1b2945" />
   <link rel="canonical" href="https://tangent-fellows.com/" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
   <meta property="og:site_name" content="Tangent" />
   <meta property="og:title" content="Tangent Fellows" />
   <meta property="og:description" content="Small-group reading and discussion for curious students in grades 7-12, guided by expert mentors." />
@@ -33,6 +33,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20260502-favicon-clean" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260502-favicon-clean" />
   <link rel="shortcut icon" href="favicon.ico?v=20260502-favicon-clean" />
+  <link rel="preload" href="fonts/libre-baskerville-700-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/allura-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css?v=20260623-track-panels" />
   <script type="application/ld+json">
     {
@@ -52,7 +54,7 @@
             "url": "https://www.sushrutthorat.com/"
           },
           "sameAs": [
-            "https://www.sushrutthorat.com/"
+            "https://www.linkedin.com/company/tangent-fellows/"
           ],
           "areaServed": ["IN", "Worldwide"],
           "knowsAbout": ["Reading groups", "Mentoring", "Mathematics", "Physics", "Neuroscience", "Design", "Artificial intelligence", "Serious books"]
@@ -109,19 +111,19 @@
       <div class="hero-collage" aria-label="Books and ideas used at Tangent">
         <article class="visual-card">
           <div class="image-frame ratio-landscape" data-fallback="Braitenberg diagram">
-            <img class="image-cover" src="images/braitenberg-vehicle-diagram.png" alt="A Braitenberg vehicle diagram showing simple mechanisms that can appear lifelike" />
+            <img class="image-cover" src="images/braitenberg-vehicle-diagram.png" alt="A Braitenberg vehicle diagram showing simple mechanisms that can appear lifelike" width="1017" height="1020" decoding="async" />
             <span class="visual-hover-name">Intelligent Behavior</span>
           </div>
         </article>
         <article class="visual-card">
           <div class="image-frame image-frame-paper ratio-landscape" data-fallback="Feynman lectures diagrams">
-            <img class="image-cover image-cover-diagram image-cover-physics" src="images/feynman-lectures-diagrams.svgz" alt="Diagram pages from The Feynman Lectures on Physics" />
+            <img class="image-cover image-cover-diagram image-cover-physics" src="images/feynman-lectures-diagrams.svgz" alt="Diagram pages from The Feynman Lectures on Physics" width="136" height="123" decoding="async" />
             <span class="visual-hover-name">Physics</span>
           </div>
         </article>
         <article class="visual-card">
           <div class="image-frame ratio-landscape" data-fallback="Mathematics diagram">
-            <img class="image-cover image-cover-diagram image-cover-math" src="images/math-diagram.jpg" alt="A geometric mathematics diagram used as a Tangent visual" />
+            <img class="image-cover image-cover-diagram image-cover-math" src="images/math-diagram.jpg" alt="A geometric mathematics diagram used as a Tangent visual" width="480" height="326" decoding="async" />
             <span class="visual-hover-name">Mathematics</span>
           </div>
         </article>
@@ -140,23 +142,23 @@
       </div>
       <div class="scientist-collage" aria-label="Thinkers who represent early intellectual seriousness">
         <figure class="scientist-card scientist-card-large" title="Albert Einstein">
-          <img class="image-cover" src="images/einstein_portrait.jpg" alt="Portrait of Albert Einstein" />
+          <img class="image-cover" src="images/einstein_portrait-400.jpg" alt="Portrait of Albert Einstein" width="313" height="400" loading="lazy" decoding="async" />
           <span class="scientist-name">Albert Einstein</span>
         </figure>
         <figure class="scientist-card scientist-card-raman" title="C. V. Raman">
-          <img class="image-cover" src="images/raman_portrait.JPG" alt="Portrait of C. V. Raman" />
+          <img class="image-cover" src="images/raman_portrait-400.jpg" alt="Portrait of C. V. Raman" width="266" height="400" loading="lazy" decoding="async" />
           <span class="scientist-name">C. V. Raman</span>
         </figure>
         <figure class="scientist-card" title="Marie Curie">
-          <img class="image-cover" src="images/curie_portrait.jpg" alt="Portrait of Marie Curie" />
+          <img class="image-cover" src="images/curie_portrait-400.jpg" alt="Portrait of Marie Curie" width="303" height="400" loading="lazy" decoding="async" />
           <span class="scientist-name">Marie Curie</span>
         </figure>
         <figure class="scientist-card" title="Emmy Noether">
-          <img class="image-cover" src="images/noether_portrait.jpg" alt="Portrait of Emmy Noether" />
+          <img class="image-cover" src="images/noether_portrait-400.jpg" alt="Portrait of Emmy Noether" width="299" height="400" loading="lazy" decoding="async" />
           <span class="scientist-name">Emmy Noether</span>
         </figure>
         <figure class="scientist-card" title="Satyendra Nath Bose">
-          <img class="image-cover" src="images/bose_portrait.jpg" alt="Portrait of Satyendra Nath Bose" />
+          <img class="image-cover" src="images/bose_portrait-400.jpg" alt="Portrait of Satyendra Nath Bose" width="299" height="400" loading="lazy" decoding="async" />
           <span class="scientist-name">Satyendra Nath Bose</span>
         </figure>
       </div>

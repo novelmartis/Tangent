@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Search indexing is intentionally disabled; see SEARCH_INDEXING.md. -->
-  <meta name="robots" content="noindex, nofollow" />
-  <title>Tracks | Tangent</title>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <title>Reading Tracks | Tangent Fellows</title>
   <meta
     name="description"
     content="Explore Tangent Fellows tracks in intelligent behavior, physics, neuroscience, design, and mathematics."
@@ -14,6 +13,7 @@
   <meta name="theme-color" content="#1b2945" />
   <link rel="canonical" href="https://tangent-fellows.com/tracks.html" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
   <meta property="og:site_name" content="Tangent" />
   <meta property="og:title" content="Tracks | Tangent Fellows" />
   <meta property="og:description" content="Available and upcoming Tangent Fellows tracks built around serious books and deep questions." />
@@ -33,7 +33,35 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20260502-favicon-clean" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260502-favicon-clean" />
   <link rel="shortcut icon" href="favicon.ico?v=20260502-favicon-clean" />
+  <link rel="preload" href="fonts/libre-baskerville-700-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/allura-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css?v=20260831-design-track" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://tangent-fellows.com/tracks.html#webpage",
+          "url": "https://tangent-fellows.com/tracks.html",
+          "name": "Reading Tracks | Tangent Fellows",
+          "description": "Explore Tangent Fellows tracks in intelligent behavior, physics, neuroscience, design, and mathematics.",
+          "isPartOf": { "@id": "https://tangent-fellows.com/#website" },
+          "about": { "@id": "https://tangent-fellows.com/#organization" },
+          "breadcrumb": { "@id": "https://tangent-fellows.com/tracks.html#breadcrumb" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://tangent-fellows.com/tracks.html#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tangent-fellows.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Tracks", "item": "https://tangent-fellows.com/tracks.html" }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -74,10 +102,10 @@
         <article class="track-card">
           <div class="mini-media mini-media-diagram">
             <div class="image-frame ratio-landscape" data-fallback="Neuron with incoming synapses">
-              <img class="image-cover image-cover-diagram" src="images/neuroscience-incoming-synapses.jpg" alt="A neuron receiving thousands of incoming synaptic connections" loading="lazy" />
+              <img class="image-cover image-cover-diagram" src="images/neuroscience-incoming-synapses.jpg" alt="A neuron receiving thousands of incoming synaptic connections" width="800" height="600" loading="lazy" decoding="async" />
             </div>
             <div class="image-frame ratio-book inset-book" data-fallback="The Brain: A Practical Guide cover">
-              <img class="image-contain" src="images/annual-reviews-brain-guide-cover.png" alt="Cover of The Brain: A Practical Guide by Annual Reviews" loading="lazy" />
+              <img class="image-contain" src="images/annual-reviews-brain-guide-cover.png" alt="Cover of The Brain: A Practical Guide by Annual Reviews" width="741" height="1200" loading="lazy" decoding="async" />
             </div>
           </div>
           <div class="track-card-body">
@@ -94,10 +122,10 @@
         <article class="track-card">
           <div class="mini-media mini-media-diagram">
             <div class="image-frame image-frame-paper ratio-landscape" data-fallback="Feynman lectures diagrams">
-              <img class="image-cover image-cover-diagram" src="images/feynman-lectures-diagrams.svgz" alt="Diagram pages from The Feynman Lectures on Physics" loading="lazy" />
+              <img class="image-cover image-cover-diagram" src="images/feynman-lectures-diagrams.svgz" alt="Diagram pages from The Feynman Lectures on Physics" width="136" height="123" loading="lazy" decoding="async" />
             </div>
             <div class="image-frame ratio-book inset-book" data-fallback="Feynman Lectures cover">
-              <img class="image-contain" src="images/feynman-lectures.jpg" alt="Cover of The Feynman Lectures on Physics, Volume 1" loading="lazy" />
+              <img class="image-contain" src="images/feynman-lectures.jpg" alt="Cover of The Feynman Lectures on Physics, Volume 1" width="1165" height="1500" loading="lazy" decoding="async" />
             </div>
           </div>
           <div class="track-card-body">
@@ -114,10 +142,10 @@
         <article class="track-card">
           <div class="mini-media mini-media-diagram">
             <div class="image-frame ratio-landscape" data-fallback="Everyday design and affordances">
-              <img class="image-cover" src="images/design-everyday-things-banner.jpg" alt="Everyday handles, controls, and objects illustrating affordances and feedback" loading="lazy" />
+              <img class="image-cover" src="images/design-everyday-things-banner.jpg" alt="Everyday handles, controls, and objects illustrating affordances and feedback" width="1400" height="1050" loading="lazy" decoding="async" />
             </div>
             <div class="image-frame ratio-book inset-book" data-fallback="The Design of Everyday Things cover">
-              <img class="image-contain" src="images/design-of-everyday-things-cover.png" alt="Cover of The Design of Everyday Things by Don Norman" loading="lazy" />
+              <img class="image-contain" src="images/design-of-everyday-things-cover-800.jpg" alt="Cover of The Design of Everyday Things by Don Norman" width="800" height="1131" loading="lazy" decoding="async" />
             </div>
           </div>
           <div class="track-card-body">
@@ -134,10 +162,10 @@
         <article class="track-card track-card-featured">
           <div class="mini-media mini-media-diagram">
             <div class="image-frame ratio-landscape" data-fallback="Braitenberg vehicle diagram">
-              <img class="image-cover" src="images/braitenberg-vehicle-diagram.png" alt="Diagram of Braitenberg vehicles and their simple sensor-motor wiring" loading="lazy" />
+              <img class="image-cover" src="images/braitenberg-vehicle-diagram.png" alt="Diagram of Braitenberg vehicles and their simple sensor-motor wiring" width="1017" height="1020" loading="lazy" decoding="async" />
             </div>
             <div class="image-frame ratio-book inset-book" data-fallback="Vehicles cover">
-              <img class="image-contain" src="images/braitenberg-vehicles-cover.jpg" alt="Cover of Vehicles by Valentino Braitenberg" loading="lazy" />
+              <img class="image-contain" src="images/braitenberg-vehicles-cover.jpg" alt="Cover of Vehicles by Valentino Braitenberg" width="657" height="1000" loading="lazy" decoding="async" />
             </div>
           </div>
           <div class="track-card-body">
@@ -154,10 +182,10 @@
         <article class="track-card future-track">
           <div class="mini-media mini-media-diagram">
             <div class="image-frame ratio-landscape" data-fallback="Mathematics diagram">
-              <img class="image-cover image-cover-diagram image-cover-math" src="images/math-diagram.jpg" alt="A mathematical diagram representing geometric structure and proof" loading="lazy" />
+              <img class="image-cover image-cover-diagram image-cover-math" src="images/math-diagram.jpg" alt="A mathematical diagram representing geometric structure and proof" width="480" height="326" loading="lazy" decoding="async" />
             </div>
             <div class="image-frame ratio-book inset-book" data-fallback="Proofs from THE BOOK">
-              <img class="image-contain" src="images/proofs-from-the-book-cover.jpg" alt="Cover of Proofs from THE BOOK by Martin Aigner and Gunter Ziegler" loading="lazy" />
+              <img class="image-contain" src="images/proofs-from-the-book-cover.jpg" alt="Cover of Proofs from THE BOOK by Martin Aigner and Gunter Ziegler" width="827" height="1036" loading="lazy" decoding="async" />
             </div>
           </div>
           <div class="track-card-body">

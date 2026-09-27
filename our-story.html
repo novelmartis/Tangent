@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Search indexing is intentionally disabled; see SEARCH_INDEXING.md. -->
-  <meta name="robots" content="noindex, nofollow" />
-  <title>Our Story | Tangent</title>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <title>Our Story | Tangent Fellows</title>
   <meta
     name="description"
     content="The story and beliefs behind Tangent Fellows, a small-group reading and discussion program for curious students."
@@ -14,6 +13,7 @@
   <meta name="theme-color" content="#1b2945" />
   <link rel="canonical" href="https://tangent-fellows.com/our-story.html" />
   <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en_IN" />
   <meta property="og:site_name" content="Tangent" />
   <meta property="og:title" content="Our Story | Tangent Fellows" />
   <meta property="og:description" content="Why Tangent Fellows exists, and the apprenticeship idea behind it." />
@@ -33,7 +33,35 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20260502-favicon-clean" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260502-favicon-clean" />
   <link rel="shortcut icon" href="favicon.ico?v=20260502-favicon-clean" />
+  <link rel="preload" href="fonts/libre-baskerville-700-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/allura-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css?v=20260623-track-panels" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AboutPage",
+          "@id": "https://tangent-fellows.com/our-story.html#webpage",
+          "url": "https://tangent-fellows.com/our-story.html",
+          "name": "Our Story | Tangent Fellows",
+          "description": "The story and beliefs behind Tangent Fellows, a small-group reading and discussion program for curious students.",
+          "isPartOf": { "@id": "https://tangent-fellows.com/#website" },
+          "about": { "@id": "https://tangent-fellows.com/#organization" },
+          "breadcrumb": { "@id": "https://tangent-fellows.com/our-story.html#breadcrumb" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://tangent-fellows.com/our-story.html#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tangent-fellows.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Our Story", "item": "https://tangent-fellows.com/our-story.html" }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -72,7 +100,7 @@
       </div>
       <div class="visual-card story-visual story-opening-visual">
         <div class="image-frame story-opening-image" data-fallback="Sahyadri landscape">
-          <img class="image-cover story-opening-photo" src="images/sahyadri-4.jpg" alt="The Sahyadri hills near Karad, where Tangent began." />
+          <img class="image-cover story-opening-photo" src="images/sahyadri-4.jpg" alt="The Sahyadri hills near Karad, where Tangent began." width="574" height="1020" decoding="async" />
         </div>
       </div>
     </div>
@@ -87,7 +115,7 @@
       </div>
       <div class="visual-card story-visual story-origin-visual">
         <div class="image-frame ratio-landscape" data-fallback="Karad and Sahyadri">
-          <img class="image-cover" src="images/sahyadri-2.jpg" alt="Landscape near Karad and the Sahyadri hills" loading="lazy" />
+          <img class="image-cover" src="images/sahyadri-2.jpg" alt="Landscape near Karad and the Sahyadri hills" width="840" height="425" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
@@ -133,7 +161,7 @@
     <div class="container story-pair">
       <div class="visual-card story-visual">
         <div class="image-frame ratio-landscape" data-fallback="Sahyadri hills">
-          <img class="image-cover" src="images/sahyadri-3.jpg" alt="A vertical view of the Sahyadri landscape" loading="lazy" />
+          <img class="image-cover" src="images/sahyadri-3.jpg" alt="A vertical view of the Sahyadri landscape" width="600" height="750" loading="lazy" decoding="async" />
         </div>
       </div>
       <div>

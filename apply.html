@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Search indexing is intentionally disabled; see SEARCH_INDEXING.md. -->
-  <meta name="robots" content="noindex, nofollow" />
-  <title>Apply | Tangent</title>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <title>Apply | Tangent Fellows</title>
   <meta
     name="description"
     content="Apply to Tangent Fellows, a small-group reading and discussion program for curious students in grades 7-12."
@@ -14,6 +13,7 @@
   <meta name="theme-color" content="#1b2945" />
   <link rel="canonical" href="https://tangent-fellows.com/apply.html" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
   <meta property="og:site_name" content="Tangent" />
   <meta property="og:title" content="Apply | Tangent Fellows" />
   <meta property="og:description" content="Apply to Tangent Fellows, a small-group reading and discussion program for curious students in grades 7-12." />
@@ -33,7 +33,35 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20260502-favicon-clean" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260502-favicon-clean" />
   <link rel="shortcut icon" href="favicon.ico?v=20260502-favicon-clean" />
+  <link rel="preload" href="fonts/libre-baskerville-700-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/allura-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css?v=20260623-track-panels" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://tangent-fellows.com/apply.html#webpage",
+          "url": "https://tangent-fellows.com/apply.html",
+          "name": "Apply | Tangent Fellows",
+          "description": "Apply to Tangent Fellows, a small-group reading and discussion program for curious students in grades 7-12.",
+          "isPartOf": { "@id": "https://tangent-fellows.com/#website" },
+          "about": { "@id": "https://tangent-fellows.com/#organization" },
+          "breadcrumb": { "@id": "https://tangent-fellows.com/apply.html#breadcrumb" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://tangent-fellows.com/apply.html#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tangent-fellows.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Apply", "item": "https://tangent-fellows.com/apply.html" }
+          ]
+        }
+      ]
+    }
+  </script>
   <script src="form-validation.js" defer></script>
 </head>
 <body>
